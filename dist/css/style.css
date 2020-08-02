@@ -53,7 +53,7 @@ body{
 }
 
 .onlineCateringDetails .onlineCateringLastParagraph {
-    margin-top: 110px;
+    margin-top: 70px;
     width: 444px;
     height: 42px;
     padding: 17px;
@@ -72,7 +72,6 @@ body{
 
 .onlineCateringIcons {
     display: flex;
-    
 }
 
 .onlineCateringIcons .fa-instagram, .onlineCateringIcons .fa-twitter {
@@ -84,7 +83,7 @@ body{
 
 .onlineCateringDetails {
     margin-left:85px ;
-    padding: 50px 0 50px 0;
+    padding: 0px 0 50px 0;
 }
 .onlineCateringImg img {
     height: 500px;
@@ -92,18 +91,17 @@ body{
 
 @media (max-width: 700px) { 
     .onlineCateringContainer {
-        margin-top: -20px;
         display: flex;
-        flex-direction: column;
     }
     .onlineCateringDetails {
         margin-top: 80px;
-        margin-left: auto;
+        margin-left: 20px;
         margin-right: auto;
+        text-align: left;
     }
 
     .onlineCateringImg img {
-        height: 250px;
+        height: 250px !important;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -355,15 +353,12 @@ body{
   
 /* Fix Media Queries */
 @media only screen and (max-width: 1094px){
-    .onlineCateringImg{
-        margin: 0 auto;
-        transform: rotate(90deg);
-    }
     .onlineCateringImg img{
         height: 400px;
+        width: 100%;
     }
     .onlineCateringContainer{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .tastyMeals{
         justify-content: center;
@@ -377,6 +372,36 @@ body{
         margin-left: 0px !important;
     }
 
+}
+
+@media only screen and (max-width: 500px){
+    .tastyMeals img{
+        width: 300px;
+        height: 200px;
+    }
+    .tastyMeals div .tastyMealsDetails {
+        width: 300px;
+    }
+    .onlineCateringDetails .onlineCateringParagraph {
+        width: 330px;
+        margin-bottom: 50px;
+    }
+    .onlineCateringDetails .onlineCateringSubHeader{
+        width: 330px;
+    }
+
+    .onlineCateringDetails .onlineCateringLastParagraph{
+        width: 85%;
+    }
+
+    .servicesWeProvide img{
+        width: 150px;
+        height: 150px;
+    }
+    .servicesWeProvide .servicesWeProvideImg2 {
+        margin-left: 120px;
+        margin-top: 130px;
+    }
 }
 
 @media only screen and (max-width: 700px){
