@@ -3,7 +3,7 @@ body{
 }
 
 .onlineCateringContainer {
-    margin-top: 90px;
+    margin-top: 84px;
     display: flex;
     justify-content: space-between;
 }
@@ -101,7 +101,7 @@ body{
     }
 
     .onlineCateringImg img {
-        height: 250px !important;
+        height: 300px !important;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -353,13 +353,6 @@ body{
   
 /* Fix Media Queries */
 @media only screen and (max-width: 1094px){
-    .onlineCateringImg img{
-        height: 400px;
-        width: 100%;
-    }
-    .onlineCateringContainer{
-        flex-direction: column-reverse;
-    }
     .tastyMeals{
         justify-content: center;
         flex-direction: column;
@@ -371,7 +364,17 @@ body{
     .tastyMealsDetails{
         margin-left: 0px !important;
     }
+    .onlineCateringDetails{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
 
+}
+
+@media only screen and (max-width: 900px){
+    .onlineCateringContainer{
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -408,4 +411,10 @@ body{
     .form-row > input {
         width: 80%;
       }
+}
+
+@media only screen and (max-width: 960px){
+    .onlineCateringImg img{
+        width: 100%;
+    }
 }
